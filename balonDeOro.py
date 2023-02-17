@@ -58,7 +58,7 @@ for i in porcentajes:
 #Aplicar metodo burbuja para ordenar de mayor a menor los porcentajes y asi mismo los jugadores correspondientes a cada porcentaje
 for i in range(len(porcentajesGanadores)-1):
   for j in range(len(porcentajesGanadores)-1):
-    if porcentajesGanadores[j]< porcentajesGanadores[j+1]:
+    if porcentajesGanadores[j] < porcentajesGanadores[j+1]:
       aux=porcentajesGanadores[j]
       porcentajesGanadores[j] = porcentajesGanadores[j+1]
       porcentajesGanadores[j+1] = aux
@@ -75,8 +75,3 @@ if (len(jugadoresGanadores)>2):
   print(f"{jugadoresGanadores[2]} {round(porcentajesGanadores[2])}% {balon[2]}")
   for i in range(3,len(jugadoresGanadores)):
     print(f"{jugadoresGanadores[i]} {round(porcentajesGanadores[i])}%")
-if len(jugadoresGanadores) == 2:
-  for i in range(len(jugadoresGanadores)):
-    print(f"{jugadoresGanadores[i]} {round(porcentajesGanadores[i])}% {balon[i]}")
-
-
